@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.box{
+    width: 101vw;
+    height: 100vh;
+    display: flex;
+
+    & .title{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 90px;
+        left: 30px;
+        top: 10%;
+        color: white;
+        pointer-events: none;
+        z-index: 2;
+
+        & .all{
+            color: rgb(159, 75, 238);
+        }
+    }
+
+    & .negociar{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 2px solid black;
+        cursor: pointer;
+        transition: 0.5s ease;
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        filter: brightness(0.7);
+        background-image: url(IMAGENS/negociar.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 44%;
+
+        & img{
+            width: 100px;
+            filter: invert();
+        }
+        & b{
+            margin-bottom: 50px;
+        }
+
+    }
+    & .negociar:hover{
+        filter: brightness(1);
+    }
+
+    & .comprar{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        cursor: pointer;
+        transition: 0.5s ease;
+        color: rgba(255, 255, 255);
+        font-size: 60px;
+        filter: brightness(0.7);
+        background-image: url(IMAGENS/Sistema-de-supermercado-1024x535.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: right;
+
+        & img{
+            width: 150px;
+            filter: invert();
+        }
+    }
+    & .comprar:hover{
+        filter: brightness(1);
+    }
+
+    & .vender{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        cursor: pointer;
+        transition: 0.5s ease;
+        color: rgba(255, 255, 255);
+        font-size: 60px;
+        filter: brightness(0.7);
+        background-image: url(IMAGENS/vender.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+
+        & img{
+            width: 150px;
+            filter: invert();
+        }
+    }
+    & .vender:hover{
+        filter: brightness(1);
+    }
+
+    & .perfil{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 2px solid black;
+        cursor: pointer;
+        transition: 0.5s ease;
+        color: rgba(255, 255, 255);
+        font-size: 60px;
+        filter: brightness(0.7);
+        background-image: url(IMAGENS/perfil.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 40%;
+
+        & img{
+            width: 150px;
+            filter: invert();
+        }
+    }
+    & .perfil:hover{
+        filter: brightness(1);
+    }
+}
